@@ -1,0 +1,88 @@
+"""
+#Question1
+num = int(input("Enter The Number: ")) 
+print(str(num)[::-1])
+"""
+
+"""
+#Question2
+num = int(input("Enter a number: "))
+sum = 0
+temp = num
+while temp > 0:
+   digit = temp % 10
+   sum += digit ** 3
+   temp //= 10
+if num == sum:
+   print(num,"is an Armstrong number")
+else:
+   print(num,"is not an Armstrong number")
+"""
+
+"""
+#Question3
+num = int(input("Enter The Number: "))
+flag = False
+if num == 1:
+    print(num, "is not a prime number")
+elif num > 1:
+    for i in range(2, num):
+        if (num % i) == 0:
+            flag = True
+            break
+    if flag:
+        print(num, "is not a prime number")
+    else:
+        print(num, "is a prime number")
+"""
+
+"""
+#Question4
+n = int(input("please give a number for fibonacci series : "))
+first,second=0,1
+print("fibonacci series are : ")
+for i in range(0,n):
+    if i<=1:
+        result=i
+    else:
+      result = first + second;
+      first = second;
+      second = result;
+    print(result)
+"""
+
+"""
+#Question5
+n = int(input("please give a number : "))
+reverse,temp = 0,n
+while temp!=0:
+    reverse = reverse*10 + temp%10;        
+    temp=temp//10;
+if reverse==n:
+    print("number is palindrom")
+else:
+    print("number is not palindrom")
+"""
+"""
+#Question6
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+num3 = float(input("Enter third number: "))
+if (num1 >= num2) and (num1 >= num3):
+   largest = num1
+elif (num2 >= num1) and (num2 >= num3):
+   largest = num2
+else:
+   largest = num3
+print("The largest number is", largest)
+"""
+"""
+#Question7
+number = input("Enter Number: ")
+p = set(number)
+s = {'0', '1'}
+if s == p or p == {'0'} or p == {'1'}:
+	print("Yes Number Is Binary")
+else:
+	print("Number is not binnary")
+"""
